@@ -12,13 +12,15 @@ namespace API.Models
     {
 
         [Key]
-        [StringLength(10)]
-        public string color2 { get; set; }
+        [Required]
+        public int color2 { get; set; }
 
-        [StringLength(10)]
+       [Required]
+        public int ID { get; set; }
+        [Required]
         public string location { get; set; }
 
-        [StringLength(2000)]
+        [Required]
         public string Description { get; set; }
     }
 }
